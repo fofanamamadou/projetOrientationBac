@@ -1,0 +1,13 @@
+.form-container {
+    background-color: #F4F6F8;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .form-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+// src/App.js
+import 'antd/dist/reset.css';
+
+import React, { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Landing from './pages/Landing';
+import StudentForm from './pages/StudentForm';
+import OrientationVideo from './pages/OrientationVideo';
+import Careers from './pages/Careers';
+import Feedback from './pages/Feedback';
+import AdminHome from './adminPages/AdminHome';
+import VideoManager from './adminPages/Video';
+import CareerManager from './adminPages/Careers';
+import FeedbackManager from './adminPages/Feedback';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+
+      return (
+        <>
+            <div>
+              <Routes>
+                <Route path="/" element={<Landing />} />
+                <Route path="/formulaire" element={<StudentForm />} />
+                <Route path="/orientation-video" element={<OrientationVideo />} />
+                <Route path="/carrieres" element={<Careers />} />
+                <Route path="/feedback" element={<Feedback />} />
+                <Route path="/admin" element={<AdminHome />} />
+                <Route path="/admin/videos" element={<VideoManager />} />
+                <Route path="/admin/careers" element={<CareerManager />} />
+                <Route path="/admin/feedbacks" element={<FeedbackManager />} />
+              </Routes>
+            </div>
+        </>
+      );
+      
 }
-
-export default App;

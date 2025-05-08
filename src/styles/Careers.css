@@ -1,0 +1,23 @@
+.careers-container {
+    background-color: #F4F6F8;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .career-card {
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .career-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
